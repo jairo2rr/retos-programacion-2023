@@ -1,0 +1,16 @@
+fun main(){
+    fizzBuzz()
+}
+
+fun fizzBuzz() {
+    for (i in 1..100) {
+        var text = ""
+        if(i%3 == 0){
+            text += "fizz"
+        }
+        if (i%5 == 0){
+            text += "buzz"
+        }
+        println(text.ifEmpty { i })
+    }
+}
